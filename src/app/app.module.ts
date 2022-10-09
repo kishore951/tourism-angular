@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { TamilnadutourismComponent } from './tamilnadutourism/tamilnadutourism.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { PlacesComponent } from './places/places.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TamilnadutourismComponent,
     NavbarComponent,
-    PlacesComponent
+    PlacesComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
