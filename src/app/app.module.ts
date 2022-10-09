@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TamilnadutourismComponent } from './tamilnadutourism/tamilnadutourism.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { PlacesComponent } from './places/places.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TamilnadutourismComponent,
-    NavbarComponent
+    NavbarComponent,
+    PlacesComponent
   ],
   imports: [
     BrowserModule,
