@@ -7,7 +7,18 @@ import { TamilnadutourismComponent } from './tamilnadutourism/tamilnadutourism.c
 import { NavbarComponent } from './navbar/navbar.component';
 import { PlacesComponent } from './places/places.component';
 import { AboutComponent } from './about/about.component';
+import { RouterModule, Routes } from '@angular/router';
 
+const appRoutes:Routes=[
+  {
+    path:"",component:TamilnadutourismComponent
+  },
+  {
+    path:"place",component:PlacesComponent
+  },{
+    path:"about",component:AboutComponent
+  }
+]
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +29,8 @@ import { AboutComponent } from './about/about.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
